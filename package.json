@@ -8,7 +8,7 @@
     "compile": "babel src --presets es2015 -d lib",
     "prepublish": "npm run compile"
   },
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "author": "Micky Brunetti",
   "license": "MIT",
   "homepage": "https://github.com/micky2be/superlogin-client",
