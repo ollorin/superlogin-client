@@ -516,9 +516,9 @@ class Superlogin extends EventEmitter2 {
 		return Promise.reject({ error: 'Authentication required' });
 	}
 
-	changeEmail(newEmail) {
+	changeEmail(form) {
 		if (this.authenticated()) {
-			return this._http.post(`${this._config.baseUrl}/change-email`, { newEmail })
+			return this._http.post(`${this._config.baseUrl}/change-email`, form)
 				.then(res => res.data)
 				.catch(err => {
 					throw parseError(err);

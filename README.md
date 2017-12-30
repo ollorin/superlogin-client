@@ -189,8 +189,9 @@ Changes the authenticated user's password, or creates one if it has not been set
 If a password already exists, then `currentPassword` is required. 
 If no password is set, then only `newPassword` and `confirmPassword` are required.
 
-##### `superlogin.changeEmail(newEmail)`
+##### `superlogin.changeEmail(form)`
 Changes the authenticated user's email.
+User must fill form.newEmail and form.currentPassword.
 If email confirmation is enabled, a new confirm email will go out, and the email will not be changed until the new address is confirmed.
 
 ##### `superlogin.logoutAll(message)`
