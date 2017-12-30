@@ -1,3 +1,5 @@
+Issues
+
 # SuperLogin-client
 
 Javascript bindings to help you build a front-end for SuperLogin applications.
